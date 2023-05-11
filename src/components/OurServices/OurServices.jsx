@@ -7,7 +7,7 @@ const OurServices = () => {
   return (
     <div className=" bg-[#ECEAE3]">
       <div className=" max-w-7xl container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center p-5 md:text-left">
-        <div className="hover:shadow-2xl rounded-lg duration-300 py-5 px-8 hover:-translate-y-1">
+        <div className="hover:shadow-2xl rounded-lg border border-gray-300 duration-300 py-5 px-8 hover:-translate-y-1">
           <div className="text-5xl text-[#331A15]">
             <SlCup className="mx-auto md:mx-0" />
           </div>
@@ -19,7 +19,7 @@ const OurServices = () => {
             You will definitely be a fan of the design & aroma of your coffee
           </p>
         </div>
-        <div className="hover:shadow-2xl rounded-lg duration-300 py-5 px-8 hover:-translate-y-1">
+        <div className="hover:shadow-2xl rounded-lg border border-gray-300 duration-300 py-5 px-8 hover:-translate-y-1">
           <div className="text-5xl text-[#331A15]">
             <SlBadge className="mx-auto md:mx-0" />
           </div>
@@ -31,7 +31,7 @@ const OurServices = () => {
             We served the coffee to you maintaining the best quality
           </p>
         </div>
-        <div className="hover:shadow-2xl rounded-lg duration-300 py-5 px-8 hover:-translate-y-1">
+        <div className="hover:shadow-2xl rounded-lg border border-gray-300 duration-300 py-5 px-8 hover:-translate-y-1">
           <div className="text-5xl text-[#331A15]">
             <GiCoffeeBeans className="mx-auto md:mx-0" />
           </div>
@@ -43,7 +43,7 @@ const OurServices = () => {
             The coffee is made of the green coffee beans which you will love
           </p>
         </div>
-        <div className="hover:shadow-2xl rounded-lg duration-300 py-5 px-8 hover:-translate-y-1">
+        <div className="hover:shadow-2xl rounded-lg border border-gray-300 duration-300 py-5 px-8 hover:-translate-y-1">
           <div className="text-5xl text-[#331A15]">
             <MdCoffeeMaker className="mx-auto md:mx-0" />
           </div>

@@ -2,7 +2,7 @@ import { Button, Checkbox, Label, TextInput, Textarea } from "flowbite-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
-import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const AddCoffee = () => {
   const handleAddCoffee = (event) => {
@@ -26,7 +26,7 @@ const AddCoffee = () => {
       photo,
       details,
     };
-    console.log(newCoffee);
+    // console.log(newCoffee);
 
     // Send data to server/
     fetch("http://localhost:5000/add-coffee", {
@@ -36,23 +36,18 @@ const AddCoffee = () => {
       },
       body: JSON.stringify(newCoffee),
     })
-      .then((res) => res.json)
+      .then((res) => res.json())
       .then((data) => {
         console.log(data);
         if (data.insertedId) {
-          alert("Added Successful");
-          // toast.success("Item Added Successfully!", {
-          //   position: "top-right",
-          //   autoClose: 3000,
-          //   hideProgressBar: false,
-          //   closeOnClick: true,
-          //   pauseOnHover: true,
-          //   draggable: true,
-          //   progress: undefined,
-          // });
+          Swal.fire({
+            title: "Success!",
+            text: "Coffee Added Successfully",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
         }
       });
-
     form.reset();
   };
 
